@@ -1,0 +1,228 @@
+<!-- <div class="row">
+  <div class="prod_box col-lg-4" >
+    <div class="SanPham">
+      <a href="">
+        <div>
+          <img [src]="['assets/Images/' + item.img]" alt="Image" style="height: 150px; width: 150px" />
+        </div>
+      </a>
+      <div><strong>{{ item.NameProduct }}</strong></div>
+      <div>Kích cỡ: {{ item.Size }}</div>
+      <div style="color: red; font-weight: bold">
+        {{ item.Dongia }} VND
+      </div>
+      <div id="star">
+        <ul>
+          <li><i class="fas fa-star" style="color: #f4fa3e"></i></li>
+          <li><i class="fas fa-star" style="color: #f4fa3e"></i></li>
+          <li><i class="fas fa-star" style="color: #f4fa3e"></i></li>
+          <li><i class="fas fa-star" style="color: #f4fa3e"></i></li>
+          <li><i class="fas fa-star" style="color: #f4fa3e"></i></li>
+        </ul>
+      </div>
+    </div>
+    <div class="prod_details_tab">
+      <a routerLink="editproduct/{{ item.id }}" class="prod_buy">Edit Product</a>
+      <a [routerLink]="['deleteproduct/', item.id]" class="prod_details">Delete Product</a>
+    </div>
+  </div>
+</div> -->
+<router-outlet></router-outlet>
+<div class="container">
+  <div class="ads-grid_shop">
+    <div class="shop_inner_inf">
+      <!-- tittle heading -->
+      <h3 class="head">Products</h3>
+      <!-- //tittle heading -->
+      <div class="row">
+        <!-- product left -->
+        <div class="side-bar col-md-3">
+          <div class="search-hotel">
+            <h3 class="agileits-sear-head">Search Here..</h3>
+            <form action="#" method="post">
+              <input type="search" placeholder="Product name..." name="search" required="">
+              <input type="submit" value=" ">
+            </form>
+          </div>
+          <!-- price range -->
+          <div class="range">
+            <h3 class="agileits-sear-head">Price range</h3>
+            <ul class="dropdown-menu6">
+              <li>
+
+                <div id="slider-range"></div>
+                <input type="text" id="amount" style="border: 0; color: #ffffff; font-weight: normal;" />
+              </li>
+            </ul>
+          </div>
+          <!-- //price range -->
+          <!--preference -->
+          <div class="left-side">
+            <h3 class="agileits-sear-head">Occasion</h3>
+            <ul>
+              <li>
+                <input type="checkbox" class="checked">
+                <span class="span">Casuals</span>
+              </li>
+              <li>
+                <input type="checkbox" class="checked">
+                <span class="span">Party</span>
+              </li>
+              <li>
+                <input type="checkbox" class="checked">
+                <span class="span">Wedding</span>
+              </li>
+              <li>
+                <input type="checkbox" class="checked">
+                <span class="span">Ethnic</span>
+              </li>
+            </ul>
+          </div>
+          <!-- // preference -->
+          <!-- deals -->
+          <div class="deal-leftmk left-side">
+            <h3 class="agileits-sear-head">Special Deals</h3>
+            <div class="special-sec1 row">
+              <div class="col-4 img-deals">
+                <img [src]="['assets/layout/images/s4.jpg']" alt="">
+              </div>
+              <div class="col-8 img-deal1">
+                <h3>Shuberry Heels</h3>
+                <a href="single.html">$180.00</a>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="special-sec1 row">
+              <div class="col-4 img-deals">
+                <img [src]="['assets/layout/images/s2.jpg']" alt="">
+              </div>
+              <div class="col-8 img-deal1">
+                <h3>Chikku Loafers</h3>
+                <a href="single.html">$99.00</a>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="special-sec1 row">
+              <div class="col-4 img-deals">
+                <img [src]="['assets/layout/images/s1.jpg']" alt="">
+              </div>
+              <div class="col-8 img-deal1">
+                <h3>Bella Toes</h3>
+                <a href="single.html">$165.00</a>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="special-sec1 row">
+              <div class="col-4 img-deals">
+                <img [src]="['assets/layout/images/s5.jpg']" alt="">
+              </div>
+              <div class="col-8 img-deal1">
+                <h3>Red Bellies</h3>
+                <a href="single.html">$225.00</a>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="special-sec1 row">
+              <div class="col-4 img-deals">
+                <img [src]="['assets/layout/images/s3.jpg']" alt="">
+              </div>
+              <div class="col-8 img-deal1">
+                <h3>(SRV) Sneakers</h3>
+                <a href="single.html">$169.00</a>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <!-- //deals -->
+
+        </div>
+        <!-- //product left -->
+        <!-- product right -->
+        <div class="left-ads-display col-md-9">
+          <div class="wrapper_top_shop row">
+            <div class="col-md-6 shop_left">
+              <img [src]="['assets/layout/images/banner3.jpg']" alt="">
+              <h6>40% off</h6>
+            </div>
+            <div class="col-md-6 shop_right">
+              <img [src]="['assets/layout/images/banner2.jpg']" alt="">
+              <h6>50% off</h6>
+            </div>
+            <div class="clearfix"></div>
+            <!-- product-sec1 -->
+            <div class="product-sec1 row">
+              <!-- /womens -->
+              <div class="col-md-4 product-men women_two" *ngFor="let item of products">
+                <div class="product-shoe-info shoe">
+                  <div class="men-pro-item">
+                    <div class="men-thumb-item">
+                      <img
+                      src="images/s4.jpg"
+                      [src]="['assets/Images/' + item.img]"
+                      alt="">
+                      <div class="men-cart-pro">
+                        <div class="inner-men-cart-pro">
+                          <a routerLink="editproduct/{{ item.id }}" class="link-product-add-cart">Quick View</a>
+                        </div>
+                      </div>
+                      <span class="product-new-top">New</span>
+                    </div>
+                    <div class="item-info-product">
+                      <h4>
+                        <a routerLink="editproduct/{{ item.id }}">{{ item.NameProduct }} </a>
+                      </h4>
+                      <div class="info-product-price">
+                        <div class="grid_meta">
+                          <div class="product_price">
+                            <div class="grid-price ">
+                              <span class="money ">{{ item.Dongia | currency:'VND' }}</span>
+                            </div>
+                          </div>
+                          <ul class="stars">
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i></a></li>
+                          </ul>
+                        </div>
+                        <div class="shoe single-item hvr-outline-out">
+                          <form action="#" method="post">
+                            <input type="hidden" name="cmd" value="_cart">
+                            <input type="hidden" name="add" value="1">
+                            <input type="hidden" name="shoe_item" value="Shuberry Heels">
+                            <input type="hidden" name="amount" value="575.00">
+                            <button type="submit" class="shoe-cart pshoe-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+
+                            <a href="#" data-toggle="modal" data-target="#myModal1"></a>
+                          </form>
+
+                        </div>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- //womens -->
+              <div class="clearfix"></div>
+
+            </div>
+
+            <!-- //product-sec1 -->
+            <div class="col-md-6 shop_left shp">
+              <img [src]="['assets/layout/images/banner4.jpg']" alt="">
+              <h6>21% off</h6>
+            </div>
+            <div class="col-md-6 shop_right shp">
+              <img [src]="['assets/layout/images/banner1.jpg']" alt="">
+              <h6>31% off</h6>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</div>

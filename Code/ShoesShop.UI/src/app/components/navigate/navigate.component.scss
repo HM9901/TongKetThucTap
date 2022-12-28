@@ -1,0 +1,42 @@
+// header
+/*-- header --*/
+.header-grid{
+	padding:0.3em 0;
+	background: #2f2f2f;
+	/*-
+	border-bottom:1px solid #DEDEDE;
+	-*/
+}
+.logo-nav{
+	padding:1em 0;
+}
+.header-left{
+	float:left;
+	margin-top: 7px;
+}
+.header-left ul li,.header-right ul li{
+	display:inline-block;
+	font-size:14px;
+	color:#fff;
+	margin: 0 1em;
+}
+.header-left ul li i,.header-right ul li i{
+	left:-.5em;
+}
+.header-left ul li a,.header-right ul li a{
+	text-decoration:none;
+	color:#fff;
+}
+.header-left ul li a:hover,.header-right ul li a:hover{
+	color:#FF7000;
+}
+.header-right1{
+	float:left;
+	margin-top: 7px;
+}
+.header-right2{
+	float:right;
+}
+.header-right {
+    float: right;
+}

@@ -1,0 +1,45 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+// MDB SCSS
+@import "mdb-angular-ui-kit/assets/scss/mdb.scss";
+// Font Awesome
+@import "@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "@fortawesome/fontawesome-free/scss/solid.scss";
+@import "@fortawesome/fontawesome-free/scss/regular.scss";
+@import "@fortawesome/fontawesome-free/scss/brands.scss";
+
+// MDB SCSS
+@import "mdb-angular-ui-kit/assets/scss/mdb.scss";
+
+h3.head {
+  text-align: center;
+  color: #111;
+  font-size: 3em;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-shadow: rgba(0, 0, 0, 0.13) 2px 2px 3px;
+  text-transform: uppercase;
+}
+p.head_para {
+  color: #999;
+  text-align: center;
+  letter-spacing:5px;
+  font-size:0.85em;
+}
+
+ul{
+  padding-left: 0 !important;
+}
+.ads-grid_shop {
+  padding: 6em 0;
+}
+
+.btn{
+  width: 215px !important;
+  height: 55px !important;
+  min-width: unset !important;
+}

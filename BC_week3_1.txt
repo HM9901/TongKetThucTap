@@ -1,0 +1,13 @@
+# Báo cáo công việc cuối ngày:
+1. Chủ đề kiến thức đã tìm hiểu trong ngày
+  - RxJS
+2. Công việc/hoạt động đã làm trong ngày
+  - Đọc tài liệu so sánh sự khác nhau giữa Promise và Observable
+  - Đọc tài liệu và thực hành chạy thử các operator trong RxJS
+3. Điều tìm hiểu được thấy hữu ích nên chia sẻ với team
+  - Giải thích Operator trong RxJS: 
+  https://viblo.asia/p/cac-operator-can-biet-trong-rxjs-aWj53Ok856m,
+  https://www.tiepphan.com/rxjs-reactive-programming/
+  - Bài so sánh Promise và Observable: https://www.syncfusion.com/blogs/post/angular-promises-versus-observables.aspx
+4. Điều đang tìm hiểu mà thấy khó  hiểu: ...
+5. Vấn đề đang gặp phải: ...

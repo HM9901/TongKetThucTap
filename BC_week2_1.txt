@@ -1,0 +1,16 @@
+Báo cáo cuối ngày:
+1. Chủ đề kiến thức đã tìm hiểu trong ngày:
+ - Angular Route
+ - CanActive
+ - CanDeactivate
+ - Lazy loading
+ - Eager Loading
+ - Preloading strategy
+2. Công việc/hoạt động đã làm trong ngày:
+ - Đọc tài liệu, xem video và tự thực hành về Angular Route, CanActive, CanDeactivate, Lazy loading, Eager Loading,
+3. Điều tìm hiểu được thấy hữu ích nên chia sẻ với team:
+  - Cậu lệnh tạo guard bằng CLI trong angular: ng generate guard tên-guard
+  - Github: https://github.com/angular-vietnam/100-days-of-angular/blob/master/Day029-router-lazy-load.md
+4. Điều đang tìm hiểu mà thấy khó hiểu: ...
+5. Vấn đề đang gặp phải: 
+ - cách thêm cơ chế routing vào project cơ bản (không phải routing-app)

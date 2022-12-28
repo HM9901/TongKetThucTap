@@ -1,0 +1,15 @@
+Báo cáo cuối ngày
+1. Chủ đề kiến thức đã tìm hiểu trong ngày
+  - Form :
+   + Template - driven forms
+   + Driven forms
+  - FormArray
+  - Form Validations
+2. Công việc, hoạt động đã làm trong ngày
+  - Đọc tài liệu và thực hành về Template-driven forms, Reactive forms và validation
+3. Điều tìm hiểu được thấy hữu ích nên chia sẻ với team
+  - Template-driven form là phương pháp mà chúng ta sẽ tạo forms dựa vào template (giống như trong Angularjs). Chúng ta thực hiện việc thêm các directives và hành vi vào template, sau đó Angular sẽ tự động tạo forms để quản lý và sử dụng.
+  - Model Driven Form hay còn gọi là Reactive Form, tránh việc sử dụng các directive ví dụ như ngModel, required, etc, thay vào đó tạo các Object Model ở trong các Component, rồi tạo ra form từ chúng.
+  - Advanced Tips and Tricks in Angular Forms: https://www.youtube.com/watch?v=IbXeRJEvUVY
+4. Điều đang tìm hiểu mà thấy khó hiểu
+5. Vấn đề đang gặp phải:

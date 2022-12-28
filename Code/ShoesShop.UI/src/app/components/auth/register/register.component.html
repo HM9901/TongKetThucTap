@@ -1,0 +1,109 @@
+<div class="container ads-grid_shop">
+  <form
+    class="sign-up-form"
+    novalidate
+    #signupForm="ngForm"
+    (ngSubmit)="onSubmit(signupForm)"
+  >
+  <h3 class="head">Sign Up</h3>
+  <p class="head_para">Type your Account</p>
+    <div class="d-flex justify-content-center">
+      <div>
+        <div class="row-control">
+          <mat-form-field appearance="outline">
+            <mat-label>Username</mat-label>
+            <input
+              matInput
+              placeholder="Username"
+              required
+              minlength="6"
+              maxlength="32"
+              [pattern]="usernamePattern"
+              ngModel
+              name="username"
+            />
+            <mat-error
+              *ngIf="
+                signupForm.controls['username'].touched &&
+                !signupForm.controls['username'].valid
+              "
+            >
+              <span *ngIf="signupForm.controls['username'].errors?.['required']"
+                >Username is required</span
+              >
+              <span
+                *ngIf="signupForm.controls['username'].errors?.['minlength'] || signupForm.controls['username'].errors?.['maxlength']"
+                >Length from 6 to 32 characters</span
+              >
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <!-- <pre>{{ signupForm.controls["username"].errors | json }}</pre> -->
+        <div class="row-control">
+          <mat-form-field appearance="outline">
+            <mat-label>Password</mat-label>
+            <input
+              type="password"
+              matInput
+              placeholder="Password"
+              ngModel
+              required
+              name="password"
+            />
+            <mat-error
+              *ngIf="
+                signupForm.controls['password'].touched &&
+                !signupForm.controls['password'].valid
+              "
+            >
+              <span *ngIf="signupForm.controls['password'].errors?.['required']"
+                >password is required</span
+              >
+              <span
+                *ngIf="signupForm.controls['password'].errors?.['minlength'] || signupForm.controls['password'].errors?.['maxlength']"
+                >Length from 6 to 32 characters</span
+              >
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="row-control">
+          <mat-form-field appearance="outline">
+            <mat-label>Repeat Password</mat-label>
+            <input
+              type="password"
+              matInput
+              placeholder="Repeat Password"
+              ngModel
+              required
+              name="re_password"
+            />
+            <mat-error
+              *ngIf="
+                signupForm.controls['password'].touched
+              "
+            >
+              <span>Confirmation password is not correct</span
+              >
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="row-control row-actions">
+          <button
+            mat-raised-button
+            color="primary"
+            type="submit"
+            [disabled]="signupForm.invalid"
+            class="btn"
+          >
+            Sign up
+          </button>
+          <p>Do you have an Account?</p>
+          <button mat-raised-button class="btn"
+          color="primary" routerLink="/login"  type="button">Login</button>
+        </div>
+        <!-- <pre>{{ signInForm.value | json }}</pre> -->
+      </div>
+    </div>
+  </form>
+
+</div>

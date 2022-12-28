@@ -1,0 +1,11 @@
+Báo cáo cuối ngày:
+1. Chủ đề kiến thức đã tìm hiểu trong ngày:
+  - Angular Material
+  - Angular CDK
+2. Công việc/hoạt động đã làm trong ngày:
+  - Đọc tài liệu và thực hành về Angular Material, Angular CDK
+3. Điều tìm hiểu được thấy hữu ích nên chia sẻ với team:
+  - How to Use Angular Material Components in Angular: https://www.youtube.com/watch?v=QL40vO6vdl8
+  - How to Upload and Display Image in Angular (Drag and Drop Images) : https://www.youtube.com/watch?v=VQaYDSPSTtU
+4. Điều đang tìm hiểu mà thấy khó hiểu: ...
+5. Vấn đề đang gặp phải: ...

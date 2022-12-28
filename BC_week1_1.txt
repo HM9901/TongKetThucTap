@@ -1,0 +1,13 @@
+Báo cáo công việc cuối ngày:
+1. Chủ đề kiến thức đã tìm hiểu trong ngày
+  - Cơ bản về TypeScript trong Angular
+  - cách thức hoạt động, và các thành phần chính cấu tạo nên ứng dụng Angular
+  - Ôn tập về Observer pattern. 
+  - NgRx và RxJS là gì? 
+2. Công việc/hoạt động đã làm trong ngày
+  - Đọc document của Angular
+  - Cài đặt angular CLI và project demo
+  - Thực hành và tìm hiểu về TypeScript, Component, property binding và event binding trong Angular
+3. Điều tìm hiểu được thấy hữu ích nên chia sẻ với team:...
+4. Điều đang tìm hiểu mà thấy khó  hiểu: ...
+5. Vấn đề đang gặp phải: ...

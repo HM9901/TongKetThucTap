@@ -1,0 +1,10 @@
+Báo cáo công việc cuối ngày:
+1. Chủ đề kiến thức đã tìm hiểu trong ngày
+    - NgRx - state management (@ngrx/store, @ngrx/effects)
+2. Công việc/hoạt động đã làm trong ngày
+  - Đọc tài liệu và thực hành về @ngrx/store, @ngrx/effects
+3. Điều tìm hiểu được thấy hữu ích nên chia sẻ với team
+  - Hiểu hơn về NgRx Effects và luồng Action: https://medium.com/@tanya/understanding-ngrx-effects-and-the-action-stream-1a74996a0c1c
+  - Example NgRx Counter: https://stackblitz.com/edit/angular-v2mddu?file=package.json
+4. Điều đang tìm hiểu mà thấy khó hiểu: NgRx@effect
+5. Vấn đề đang gặp phải: ...

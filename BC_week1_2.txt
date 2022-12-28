@@ -1,0 +1,31 @@
+Báo cáo công việc cuối ngày:
+1. Chủ đề kiến thức đã tìm hiểu trong ngày
+  - Angular modules
+  - Angular Component
+  - Angular lifecyle hook
+  - Angular Routing
+2. Công việc/hoạt động đã làm trong ngày
+  - Thực hành và tìm hiểu về cách hoạt động của Module, Component và lifecycle của component trong Angular.
+  - Modules Angular: Các thành phần trong angular đều được đóng gói, tổng hợp dưới dạng module. Câu lệnh cài đặt module bằng CLI: ng generate module <Tên module>.
+Mỗi ứng dụng Angular bắt buộc phải có ít nhất 1 module, gọi là appmodule or rootModule, bên trong appModule sẽ có nhiều module chức năng khác.
+   declarations: Dùng để khai báo những thành phần chúng ta sẽ dùng ở trên template (thường chủ yếu là các component, directive và pipe).
+   providers: Dùng để khai báo các service dùng trong toàn bộ các module của con (dù có lazy loading module hay không vẫn available).
+   imports: Nó là một mảng các module cần thiết để được sử dụng trong ứng dụng. Nó cũng có thể được sử dụng bởi các Component trong mảng Declarations. Ví dụ: trong @NgModule, chúng ta thấy BrowserModule và AppRoutingModule được import
+   bootstrap: Định nghĩa component gốc của module.
+  - Component: đảm bảo nhiệm vụ công việc hiển thị UI, tương tác giữa view với người dùng. Một component bắt buộc phải khai báo trong 1 module nào đó, nếu k thì nó sẽ k có nghĩa. 
+Tất cả thành phần ở trong angular đều là class, các class này đều được khởi tạo bằng component decorator. Decorator sẽ nhận vào 1 metadata, dựa trên cái metadata này class này sẽ biết phải làm gì,
+Câu lệnh CLI cài đặt Component: ng generate component <Tên Component>.
+  - Lifecyle của 1 component:
+  1. Contructor: được gọi khi khởi tạo 1 instant của component.
+  2. ngOnChanges: Thự thi khi Angular thiết lập các thuộc tính đầu vào ràng buộc dữ liệu. Được gọi trước ngOnInit() và bất cứ khi nào một hoặc nhiều thuộc tính đầu vào ràng buộc dữ liệu thay đổi.
+  3. ngOnInnit: Khởi tạo directive / component sau khi Angular hiển thị các thuộc tính ràng buộc dữ liệu và đặt các thuộc tính đầu vào của directive / component. Được gọi một lần, sau ngOnChanges() đầu tiên.
+  4. ngDoCheck: Phát hiện và hành động theo những thay đổi mà Angular không thể hoặc sẽ không tự mình phát hiện. Được gọi trong mỗi lần chạy phát hiện thay đổi, ngay sau ngOnChanges() và ngOnInit().
+  5. ngAfterContentInit: Thực thi sau khi Angular thêm nội dung bên ngoài vào view của component / view mà directive được đưa vào. Được gọi một lần sau ngDoCheck() đầu tiên.
+  6. ngAfterContentChecked: Thực thi sau khi Angular đã kiểm tra nội dung bên ngoài đã được đưa vào view của component. Được gọi sau ngAfterContentInit() và mọi ngDoCheck() tiếp theo.
+  7. ngAfterViewInit: Thực thi sau khi Angular khởi tạo các view của component và các view con / view mà directive được đưa vào. Được gọi một lần sau ngAfterContentChecked() đầu tiên.
+  8. ngAfterViewChecked: Thực thi sau khi Angular kiểm tra các view của component và các view con /view mà directive được đưa vào. Được gọi sau ngAfterViewInit() và mọi ngAfterContentChecked() tiếp theo.
+  9. ngOnDestroy: Dọn dẹp ngay trước khi Angular phá hủy directive / component. Hủy đăng ký Observables và tách trình xử lý sự kiện để tránh rò rỉ bộ nhớ. Được gọi ngay trước khi Angular phá hủy directive / component.
+  - Thực hành cơ bản về routing.
+3. Điều tìm hiểu được thấy hữu ích nên chia sẻ với team: video hướng dẫn Routing trong angular https://youtu.be/2uOhvgYnNEw 
+4. Điều đang tìm hiểu mà thấy khó  hiểu: content projection và ngDoCheck ảnh hưởng với nhau như thế nào trong angular
+5. Vấn đề đang gặp phải: ...

@@ -1,0 +1,70 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "NameProduct": "New Balance 577",
+      "Size": 39,
+      "Dongia": 100000,
+      "SLTon": 20,
+      "details": "Giày sneaker New Balance574 là mẫu giày Unisex được các tín đồ cực kỳ yêu thích. Giày có lớp lót được làm từ Cotton giúp cho mọi vận động trở nên cực kỳ thoải mái và êm ái. Thiết kế Cổ thấp trendy thích hợp với những bạn trẻ cá tính và năng động. Đôi sneaker New Balance574 được làm từ Da mang lại sự bền bỉ trong nhiều năm liền. Phần dây được làm theo kiểu Dây khá gọn gàng và tiện dụng.",
+      "img": "1.jpg"
+    },
+    {
+      "id": 2,
+      "NameProduct": "Lacoste Storda 120",
+      "Size": 40,
+      "Dongia": 124000,
+      "SLTon": 50,
+      "details": "Giày sneaker New Balance574 là mẫu giày Unisex được các tín đồ cực kỳ yêu thích. Giày có lớp lót được làm từ Cotton giúp cho mọi vận động trở nên cực kỳ thoải mái và êm ái. Thiết kế Cổ thấp trendy thích hợp với những bạn trẻ cá tính và năng động. Đôi sneaker New Balance574 được làm từ Da mang lại sự bền bỉ trong nhiều năm liền. Phần dây được làm theo kiểu Dây khá gọn gàng và tiện dụng.",
+      "img": "jordan.jpg"
+    },
+    {
+      "id": 3,
+      "NameProduct": "Lacoste Slip On Tatalya 319",
+      "Size": 39,
+      "Dongia": 200000,
+      "SLTon": 20,
+      "details": "Giày sneaker New Balance574 là mẫu giày Unisex được các tín đồ cực kỳ yêu thích. Giày có lớp lót được làm từ Cotton giúp cho mọi vận động trở nên cực kỳ thoải mái và êm ái. Thiết kế Cổ thấp trendy thích hợp với những bạn trẻ cá tính và năng động. Đôi sneaker New Balance574 được làm từ Da mang lại sự bền bỉ trong nhiều năm liền. Phần dây được làm theo kiểu Dây khá gọn gàng và tiện dụng.",
+      "img": "giaytt.jpg"
+    },
+    {
+      "id": 4,
+      "NameProduct": "Nike Zoom Gravity",
+      "Size": 39,
+      "Dongia": 180000,
+      "SLTon": 30,
+      "details": "Giày sneaker New Balance574 là mẫu giày Unisex được các tín đồ cực kỳ yêu thích. Giày có lớp lót được làm từ Cotton giúp cho mọi vận động trở nên cực kỳ thoải mái và êm ái. Thiết kế Cổ thấp trendy thích hợp với những bạn trẻ cá tính và năng động. Đôi sneaker New Balance574 được làm từ Da mang lại sự bền bỉ trong nhiều năm liền. Phần dây được làm theo kiểu Dây khá gọn gàng và tiện dụng.",
+      "img": "thoitrang.jpg"
+    },
+    {
+      "id": 5,
+      "NameProduct": "Nike Air Max Alpha",
+      "Size": 39,
+      "Dongia": 100000,
+      "SLTon": 20,
+      "details": "Giày sneaker New Balance574 là mẫu giày Unisex được các tín đồ cực kỳ yêu thích. Giày có lớp lót được làm từ Cotton giúp cho mọi vận động trở nên cực kỳ thoải mái và êm ái. Thiết kế Cổ thấp trendy thích hợp với những bạn trẻ cá tính và năng động. Đôi sneaker New Balance574 được làm từ Da mang lại sự bền bỉ trong nhiều năm liền. Phần dây được làm theo kiểu Dây khá gọn gàng và tiện dụng.",
+      "img": "jordan.jpg"
+    },
+    {
+      "id": 6,
+      "NameProduct": "Nike Phantom React Flyknit",
+      "Size": 39,
+      "Dongia": 100000,
+      "SLTon": 20,
+      "details": "Giày sneaker New Balance574 là mẫu giày Unisex được các tín đồ cực kỳ yêu thích. Giày có lớp lót được làm từ Cotton giúp cho mọi vận động trở nên cực kỳ thoải mái và êm ái. Thiết kế Cổ thấp trendy thích hợp với những bạn trẻ cá tính và năng động. Đôi sneaker New Balance574 được làm từ Da mang lại sự bền bỉ trong nhiều năm liền. Phần dây được làm theo kiểu Dây khá gọn gàng và tiện dụng.",
+      "img": "giaytt.jpg"
+    }
+  ],
+  "auth": [
+    {
+      "id": 1,
+      "username": "hoangpm9901",
+      "password": "123"
+    },
+    {
+      "id": 2,
+      "username": "123456",
+      "password": "123"
+    }
+  ]
+}

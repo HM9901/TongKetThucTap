@@ -1,0 +1,12 @@
+# Báo cáo công việc cuối ngày:
+1. Chủ đề kiến thức đã tìm hiểu trong ngày
+  - Unit test trong Angular
+  - Security trong Angular
+  - Thư viện giao diện PrimeNg
+2. Công việc/hoạt động đã làm trong ngày
+  - Đọc tài liệu và thực hành về Unit test, Security và PrimeNG trong Angular
+3. Điều tìm hiểu được thấy hữu ích nên chia sẻ với team
+  - Viết unit test với Mock và Spy: https://viblo.asia/p/angular-viet-unit-test-voi-mock-va-spy-maGK78maZj2
+  - Series hướng dẫn sử dụng PrimeNg Example: https://www.youtube.com/watch?v=OJ7xtpKWKT8&list=PLlVkYWGRhwk_U8IO-v4GOvKtxMABBH58l
+4. Điều đang tìm hiểu mà thấy khó  hiểu: ...
+5. Vấn đề đang gặp phải: ...

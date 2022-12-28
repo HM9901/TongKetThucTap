@@ -1,0 +1,67 @@
+<div class="container">
+  <div class="form-horizontal form-edit">
+    <hr />
+    <div class="row">
+      <div class="col-5">
+        <div class="form-group1">
+          <input type="file" style="height:30px;"  accept="Image/*" required />
+            <div class="col-md-12">
+              <img [src]="['assets/Images/'+data.img]" [(ngModel)]="data.img" alt="img" >
+            </div>
+        </div>
+      </div>
+      <div class="col-7">
+        <div class="form-group1">
+          <label for="">Product ID</label>
+            <div class="col-md-12">
+                <input type="text" class="form-control" [(ngModel)]="data.id"  />
+            </div>
+        </div>
+
+        <div class="form-group1">
+          <label for="">Name Product</label>
+            <div class="col-md-12">
+              <input type="text" value="" class="form-control" [(ngModel)]="data.NameProduct"  />
+            </div>
+        </div>
+
+        <div class="form-group1">
+          <label for="">Size</label>
+            <div class="col-md-12">
+              <input type="text" value=""  class="form-control" [(ngModel)]="data.Size" />
+            </div>
+        </div>
+
+
+        <div class="form-group1">
+          <label for="">Price</label>
+
+            <div class="col-md-12">
+              <input type="text" value=""   class="form-control" [(ngModel)]="data.Dongia" />
+            </div>
+        </div>
+        <div class="form-group1">
+          <label for="">Quantity</label>
+
+            <div class="col-md-12">
+              <input type="text" value=""   class="form-control" [(ngModel)]="data.SLTon" />
+            </div>
+        </div>
+        <div class="form-group1">
+          <label for="">Description</label>
+            <div class="col-md-12">
+              <textarea name="" id="" cols="100" rows="10" [(ngModel)]="data.details" ></textarea>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-group1">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Cập nhật" class="btn btn-primary" (click)="save()" />
+            <input type="submit" value="Xóa sản phẩm" class="btn btn-danger ms-5  " (click)="delete()" />
+        </div>
+    </div>
+  </div>
+
+
+</div>

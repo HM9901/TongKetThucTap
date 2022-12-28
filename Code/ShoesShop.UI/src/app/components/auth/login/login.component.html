@@ -1,0 +1,119 @@
+<div class="container ads-grid_shop">
+  <form
+    class="sign-in-form"
+    novalidate
+    #signInForm="ngForm"
+    (ngSubmit)="onSubmit(signInForm)"
+  >
+  <h3 class="head">LOGIN</h3>
+  <p class="head_para">Type your Account</p>
+  <div class="d-flex justify-content-center">
+    <div class="">
+      <div class="row-control">
+        <mat-form-field appearance="outline">
+          <mat-label>Username</mat-label>
+          <input
+            matInput
+            placeholder="Username"
+            required
+            minlength="6"
+            maxlength="32"
+            [pattern]="usernamePattern"
+            ngModel
+            name="username"
+          />
+          <mat-error
+            *ngIf="
+              signInForm.controls['username'].touched &&
+              !signInForm.controls['username'].valid
+            "
+          >
+            <span *ngIf="signInForm.controls['username'].errors?.['required']"
+              >Username is required</span
+            >
+            <span
+              *ngIf="signInForm.controls['username'].errors?.['minlength'] || signInForm.controls['username'].errors?.['maxlength']"
+              >Length from 6 to 32 characters</span
+            >
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <!-- <pre>{{ signInForm.controls["username"].errors | json }}</pre> -->
+      <div class="row-control">
+        <mat-form-field appearance="outline">
+          <mat-label>Password</mat-label>
+          <input
+            type="password"
+            matInput
+            placeholder="Password"
+            ngModel
+            required
+            name="password"
+          />
+          <mat-error
+            *ngIf="
+              signInForm.controls['password'].touched &&
+              !signInForm.controls['password'].valid
+            "
+          >
+            <span *ngIf="signInForm.controls['password'].errors?.['required']"
+              >password is required</span
+            >
+            <span
+              *ngIf="signInForm.controls['password'].errors?.['minlength'] || signInForm.controls['password'].errors?.['maxlength']"
+              >Length from 6 to 32 characters</span
+            >
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div class="row-control row-actions">
+        <button
+          mat-raised-button
+          color="primary"
+          type="submit"
+          [disabled]="signInForm.invalid"
+          class="btn"
+        >
+          Sign in
+        </button>
+        <p>Do not have an account?</p>
+        <button mat-raised-button class="btn"
+        color="primary" routerLink="/register"  type="button">Sign up</button>
+      </div>
+    </div>
+  </div>
+    <!-- <pre>{{ signInForm.value | json }}</pre> -->
+  </form>
+</div>
+<!--
+<div class="login">
+		<div class="container">
+		<form>
+			<div class="col-md-6 login-do1 animated wow fadeInLeft" data-wow-delay=".5s">
+				<div class="login-mail">
+					<input type="text" placeholder="Email" required="">
+					<i class="glyphicon glyphicon-envelope"></i>
+				</div>
+				<div class="login-mail">
+					<input type="password" placeholder="Password" required="">
+					<i class="glyphicon glyphicon-lock"></i>
+				</div>
+				   <a class="news-letter " href="#">
+						 <label class="checkbox1"><input type="checkbox" name="checkbox" ><i> </i>Forgot Password</label>
+					   </a>
+
+
+			</div>
+			<div class="col-md-6 login-do animated wow fadeInRight" data-wow-delay=".5s">
+				<label class="hvr-sweep-to-top login-sub">
+					<input type="submit" value="login">
+					</label>
+					<p>Do not have an account?</p>
+				  <a href="register.html" class="hvr-sweep-to-top">Signup</a>
+			</div>
+
+			<div class="clearfix"> </div>
+			</form>
+
+	</div>
+	</div> -->

@@ -1,0 +1,17 @@
+Báo cáo công việc cuối ngày:
+1. Chủ đề kiến thức đã tìm hiểu trong ngày
+  - Template and Data Binding
+  - Directive
+  - Pipe
+2. Công việc/hoạt động đã làm trong ngày
+  - Đọc tài liệu và thực hành về Template and Data Binding, Directive, Pipe
+3. Điều tìm hiểu được thấy hữu ích nên chia sẻ với team: 
+  - Pipe là một tính năng được xây dựng sẵn từ Angular 2 với mục tiêu nhằm biến đổi dữ liệu đầu ra, hiển thị lên trên template đúng với ý tưởng thiết kế lập trình, thân thiện với người sử dụng
+  - Cách sử dụng pipe: {{ birthday | date:"MM/dd/yy" }} {{data.price | currency:"VND"}}
+  - Compare Pipe and Directive in Angular: https://www.geekboots.com/story/pipe-vs-directive-in-angular
+  - Cách custom pipe trong angular: https://viblo.asia/p/tao-mot-custom-pipe-trong-angular-WR5JRbxAJGv
+  - Components directives: component cho phép định nghĩa selector và gọi ra như một thẻ html tag (<component-name></component-name>)
+  - Structural directives: Là directive cấu trúc, dùng để vẽ html, hiển thị data lên giao diện html, và thay đổi cấu trúc DOM bằng việc thêm bớt các phần tử trong DOM. Các structural directive thường có dấu '*' ở trước của directive. Ví dụ *ngFor, *ngIf
+  - Attribute directives: Thay đổi giao diện, tương tác của các đối tượng hoặc thay đổi directive khác hoặc thêm các thuộc tính động cho element html. ví dụ *ngStyle
+4. Điều đang tìm hiểu mà thấy khó  hiểu: ...
+5. Vấn đề đang gặp phải: ...

@@ -1,0 +1,14 @@
+Báo cáo công việc cuối ngày
+1. Chủ đề kiến thức đã tìm hiểu trong ngày
+  - HttpClient
+  - Interceptor
+2. Công việc/hoạt động đã làm trong ngày:
+  - Đọc tài liệu về HttpClient, HttpInterceptor
+  - Thực hành xây dựng các chức năng cơ bản CRUD với HttpClient
+  - thực hành interceptor gán nhãn token vào header reponse cho tất cả http request
+3. Điều tìm hiểu được thấy hữu ích nên chia sẻ với team
+  - Http Client là một Service Module(*) được cung cấp bởi Angular giúp chúng ta thực hiện những yêu cầu Http, dễ dàng custom các request option và handle error một cách dễ dàng.
+  - Interceptor là 1 service implement httpInterceptor, có phương thức intercept để handle các http request gửi đến. Với mỗi request interceptor sẽ tự động gán nhãn dữ liệu vào header reponse đó có thể là session, cookie, token.
+  - Angular Authentication (Role based Authentication + AUTH Guard + Http Interceptor + Core API + httpClient): https://www.youtube.com/watch?v=Kfzcs-d9R7k&t=538s 
+4. Điều đang tìm hiểu mà thấy khó  hiểu: 
+5. Vấn đề đang gặp phải: 

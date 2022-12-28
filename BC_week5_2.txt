@@ -1,0 +1,20 @@
+Báo cáo cuối ngày:
+1. Chủ đề kiến thức đã tìm hiểu trong ngày
+- Angular Animation
+- NgZone
+2. Công việc/hoạt động đã làm trong ngày
+- Đọc tài liệu và thực hành cơ bản tạo animation với Angular Animations, NgZone.
+3. Điều tìm hiểu được thấy hữu ích nên chia sẻ với team
+-  Zones wrap các API trình duyệt không đồng bộ, và thông báo cho người dùng khi một tác vụ không đồng bộ đã bắt đầu hoặc kết thúc. 
+Angular lợi dụng các API này để nhận thông báo khi có bất kỳ tác vụ không đồng bộ nào được thực hiện.Nó bao gồm những thứ như call XHR, setTimeout(), và tuyệt vời hơn nhiều các user events như click, submit, mousedown,.
+Một khi được thông báo, Angular biết rằng nó phải thực hiện việc dò tìm thay đổi vì bất kỳ hoạt động không đồng bộ nào có thể đã thay đổi trạng thái ứng dụng.
+Điều này ví dụ luôn luôn là trường hợp khi chúng ta sử dụng dịch vụ Http của Angular để lấy dữ liệu từ một server từ ở xa. 
+Zone sẽ làm tất cả những điều đó, nếu như người dùng muốn, còn nếu không muốn Zone bắt sự kiện có thể dùng zone.runOutsideAngular.
+- Lý do gặp lỗi phổ biến khi sử dụng thư viện bên ngoài, mà NgZone không thể phát hiện được thay đổi: 
+https://indepth.dev/posts/1059/do-you-still-think-that-ngzone-zone-js-is-required-for-change-detection-in-angular
+- Zone trong Angluar và các thiết kế ở front-end framework: 
+https://kipalog.com/posts/Zone-trong-Angluar-va-cac-thiet-ke-o-front-end-framework?fbclid=IwAR2t-VOSi33Xffwo97AV0r0xIeXYKQ0P3Be9udr--RF7_J4mrpHXoebhAOg
+- Concept of Angular better than concept React, Vue: 
+https://github.com/angular/angular/issues/22587?fbclid=IwAR3Dd30WnQYWrYrNavT_T5qQykprj7bMoOf1lVTHcEOEFk9vl9QeV6zuU5s
+4. Vấn đề đang tìm hiểu mà cảm thấy khó hiểu: ...
+5. Vấn đề đang gặp phải: ...

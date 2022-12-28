@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ShoesShopUI</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="mat-typography">
+  <app-root></app-root>
+  <script>
+    (function() {
+	var container = document.querySelector( 'div.container' ),
+		triggerBttn = document.getElementById( 'trigger-overlay' ),
+		overlay = document.querySelector( 'div.overlay' ),
+		closeBttn = overlay.querySelector( 'button.overlay-close' );
+		transEndEventNames = {
+			'WebkitTransition': 'webkitTransitionEnd',
+			'MozTransition': 'transitionend',
+			'OTransition': 'oTransitionEnd',
+			'msTransition': 'MSTransitionEnd',
+			'transition': 'transitionend'
+		},
+		transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
+		support = { transitions : Modernizr.csstransitions };
+    isCheck = false;
+
+	function toggleOverlay() {
+		// if( overlay.classList.add('open') ) {
+		// 	overlay.classList.remove('open');
+    //   container.classList.remove('ovarlay-open')
+    //   overlay.classList.add('close')
+		// 	var onEndTransitionFn = function( ev ) {
+		// 		if( support.transitions ) {
+		// 			if( ev.propertyName !== 'visibility' ) return;
+		// 			this.removeEventListener( transEndEventName, onEndTransitionFn );
+		// 		}
+		// 		classie.remove( overlay, 'close' );
+		// 	};
+		// 	if( support.transitions ) {
+		// 		overlay.addEventListener( transEndEventName, onEndTransitionFn );
+		// 	}
+		// 	else {
+		// 		onEndTransitionFn();
+		// 	}
+		// }
+		// else if( !classie.has( overlay, 'close' ) ) {
+		// 	classie.add( overlay, 'open' );
+		// 	classie.add( container, 'overlay-open' );
+		// }
+    isCheck = !isCheck
+      if(isCheck){
+        overlay.classList.add('open');
+      }
+      overlay.classList.remove('open');
+	}
+
+	triggerBttn.addEventListener( 'click', toggleOverlay );
+	closeBttn.addEventListener( 'click', toggleOverlay );
+})();
+  </script>
+</body>
+</html>

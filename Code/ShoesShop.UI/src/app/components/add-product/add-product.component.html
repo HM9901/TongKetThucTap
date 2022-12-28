@@ -1,0 +1,58 @@
+<div class="form-horizontal">
+  <hr />
+  <div class="form-group1">
+    <label for="">Mã Sản phẩm</label>
+      <div class="col-md-10">
+          <input type="text"  disabled class="form-control" />
+      </div>
+  </div>
+
+  <div class="form-group1">
+    <label for="">Tên Sản phẩm</label>
+      <div class="col-md-10">
+        <input type="text" value="" [(ngModel)]="name" class="form-control" />
+      </div>
+  </div>
+
+  <div class="form-group1">
+    <label for="">Kích cỡ</label>
+      <div class="col-md-10">
+        <input type="text" value="" [(ngModel)]="size"  class="form-control" />
+      </div>
+  </div>
+
+
+  <div class="form-group1">
+    <label for="">Đơn giá</label>
+
+      <div class="col-md-10">
+        <input type="text" value="" [(ngModel)]="price"   class="form-control" />
+      </div>
+  </div>
+  <div class="form-group1">
+    <label for="">Số lượng</label>
+
+      <div class="col-md-10">
+        <input type="text" value="" [(ngModel)]="amount"   class="form-control" />
+      </div>
+  </div>
+  <div class="form-group1">
+    <label for="">Mô tả</label>
+      <div class="col-md-10">
+        <input type="text" value="" [(ngModel)]="details"   class="form-control" />
+      </div>
+  </div>
+
+  <div class="form-group1">
+    <label for="">hình ảnh</label>
+      <div class="col-md-10">
+          <input type="file" style="height:30px;" [(ngModel)]="img" accept="Image/*" required />
+      </div>
+  </div>
+
+  <div class="form-group1">
+      <div class="col-md-offset-2 col-md-10">
+          <input type="submit" value="Thêm mới" class="btn btn-danger" (click)="save()" />
+      </div>
+  </div>
+</div>
